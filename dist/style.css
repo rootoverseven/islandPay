@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif, 'Monoton';
+}
+.navBar {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgb(184, 184, 184);
+  z-index: 9999;
+}
+
+.navBar .logo{
+  position: relative;
+  padding-left: 70px;
+  font-family: Monoton;
+  font-size: 30px;
+  text-decoration: none;
+  
+  color: #31015e;
+}
+.navBar li{
+  position: relative;
+  float:left;
+  list-style: none; 
+  margin: 13px 20px;
+  
+  justify-content: center;
+  align-items: center;
+}
+.navBar li a{
+  text-decoration: none;
+  color: #31015e;
+  
+  justify-content: center;
+  align-items: center;
+}
+.navBar ul{
+  float:left;
+  list-style: none; 
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(88, 88, 88);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+button{
+  border: none;
+  color: rgb(79, 3, 109);
+  background-color: white;
+  text-decoration: none;
+}
+
+.navButton {
+  background-color: #742a7e;
+  border: none;
+  color: white;
+  margin-top: -10px;
+  padding: 3px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.menuNav {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mBar1 {
+  width: 20px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #333;
+  transition: 0.4s;
+}
+.mBar2 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.mBar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  transition: 0.4s;
+}
+.bar4 {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(228, 228, 228);
+  transition: 0.4s;
+}
+
+.change .mBar1, .change .mBar2, .change .mBar3 {
+
+  background-color: coral;
+}
+.headerContainer{
+  position: block;
+  font-family: Arial;
+  height: 77vh;
+}
+
+.banner {
+  background: url(https://nr-customers.s3.amazonaws.com/customers/paysafe/skrill/new-design/images/iStock_bg.png) no-repeat center;
+  background-size: cover;
+  display: flexbox;
+  width: 100%;
+  height: 77vh;
+  top: 0;
+  left: 0;
+  position: block;
+  font-family: Arial;
+}
+
+.answer {
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  right: 25%;;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow:0px 10px 20px 10px rgba(0, 0, 0, 0.137);
+}
+.answer h2{
+  font-size: 28px;
+  color: rgb(68, 0, 100);
+}
+.answer input[type=text], select {
+  width:85% ;
+  height: 50px;
+  padding: 12px 20px ;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  display: inline-block;
+  border: 2px solid rgba(80, 80, 80, 0.349);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+::placeholder {
+  color: #742a7e;
+  opacity: 1; /* Firefox */
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bodyCardParent{
+  width: 100%;
+  background-color: #ffffff;
+  height: 33rem;
+  margin-top: 10px;
+  margin-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+}
+.stackWrapper{
+  width: 80rem;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.stackWrapper .text{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.stackWrapper p{
+  font-size: 0.99em;
+  padding: 0.3em;
+  margin: 2vh 0;
+}
+.stackWrapper .textWrapper{
+  padding: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.stackWrapper button{
+  box-shadow: 0 0 0 2px var(--color-purple) inset;
+    background: 0 0;
+    color: var(--color-purple);
+    min-width: 12.5em;
+    padding-top: .55em;
+    padding-bottom: .45em;
+    border-radius: .4em;
+    
+    font-weight: 700;
+    
+    display: inline-block;
+    vertical-align: middle;
+    word-break: break-word;
+    margin-top: 2em;
+}
+.stackWrapper .img{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(50, 132, 255);
+}
+.stackWrapper .imgContent{
+  background: url(https://www.skrill.com/fileadmin/_processed_/8/a/csm_receive-money_216e73b920.webp) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.stackWrapper h1{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 3em;
+  color: rgb(55, 0, 92);
+}
+
+.stack{
+  height: 40rem;
+}
+
+
+.image-stack {
+  display: grid;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  grid-template: repeat(3,1fr)/repeat(4,1fr);
+}
+
+.image-stack__item--bottom {
+
+  grid-column: -3/-1;
+  grid-row: -3/-1;
+  width: auto;
+  max-width: 100%
+}
+.cardDownload {
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+  background: radial-gradient(#792162, #532456);
+}
+
+.cardDownload:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+  background: #e8e3e9;
+  border-radius: 10px;
+}
+.cardDownload:hover h1,.cardDownload:hover p {
+  color: rgb(77, 0, 70);
+}
+.image-stack__item--top {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  width: auto;
+  z-index: 1;
+  background-color: #e8e3e9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.image-stack__item--top .top{
+  margin: auto;
+  padding: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardDownload h1, .cardDownload p{
+  color: white;
+}
+
+.image-stack__item--bottom .bottom{
+  background: url(https://www.skrill.com/fileadmin/_processed_/5/6/csm_hp-bike_da170532c2.webp) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stack-two .bottom{
+  background: url(https://www.skrill.com/fileadmin/_processed_/3/4/csm_download-app-homepage_8cb4136ae0.webp) no-repeat center;
+}
+
+a[href].google {
+  font-size: 0;
+    height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #af2a2a!important;
+    margin: .45rem;
+    margin-inline-start: 0;
+    max-width: calc(100% - 2rem);
+    width: 142px;
+    margin-right: 1.5rem;
+    background-size: auto 60px;
+    transition: all 0.5s ease;
+    margin-top: 2rem;
+}
+
+a[href].apple {
+  font-size: 0;
+    height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #af2a2a!important;
+    margin: .45rem;
+    margin-inline-start: 0;
+    max-width: calc(100% - 2rem);
+    width: 126px;
+    margin-right: 1.5rem;
+    transition: all 0.5s ease;
+    margin-top: 2rem;
+}
+
+.google{
+  background: url(../images/google.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.google:hover, .apple:hover{
+  transform: scale(1.1);
+}
+
+.apple{
+  background: url(../images/apple.svg) center center no-repeat;
+    background-size: fill;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+  padding: 120px;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(63, 0, 105);
+}
+.column {
+  width: 25%;
+  padding: 0 15px;
+}
+.test{
+  display: flex;
+  justify-content: center;
+}
+
+/* Remove extra left and right margins, due to padding */
+.bodyCards {
+  display: flex;
+  justify-content: center;
+  width: 76rem;
+}
+
+/* Clear floats after the columns */
+.bodyCards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1121px) {
+  .bodyCards {
+    display: inline-block;
+    justify-content: center;
+    width: 90%;
+  }
+  .column {
+    width: 95%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card p{
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .visible {
+    display: none;
+  }
+  .dropbtn{
+    display: none;
+  }
+  
+}
+@media screen and (max-width: 1280px) {
+  .visible {
+    display: none;
+  }
+  .dropbtn{
+    display: none;
+  }
+  .bodyCardParent{
+    height: calc(50rem - 20vw);
+  }
+  .stackWrapper p{
+    font-size: 1.7vh;
+    padding: 0.3vh;
+    margin: 1.5vh 0;
+  }
+
+  .stackWrapper h1{
+    font-size: 5vh;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .navBar .logo, .navBar li {
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 15px;
+  }
+  .navBar i{
+    display: none;
+  }
+  .navButton{
+    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: rgb(57, 1, 90);
+    
+  }
+  .navbar li, a, ul{
+    margin: 0;
+    padding: 0;
+  }
+  .menuNav{
+    display: none;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+  .image-stack__item--bottom{
+    grid-column: 6/1;
+    grid-row: -2/-1;
+    width: auto;
+    max-width: 100%;
+  }
+  .image-stack__item--top{
+    grid-column: 1/6;
+    grid-row: 1/3;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color: #e5deec;
+  padding-bottom: 50px;
+}
+
+.card h3{
+  margin: 30px;
+  margin-bottom: 45px;
+  font-size: 30px;
+  color: rgb(63, 0, 105);
+}
+.card p{
+  margin: 10px;
+  font-size: 20px;
+  color: rgb(63, 0, 105);
+}
+
+/*---------------------------------------------FAQ------------------------------------------------*/
+.faq{
+  
+  width: 70rem;
+  justify-content: left;
+  margin-bottom: 100px;
+}
+.faqwrapper{
+  display: flex;
+  justify-content: center;
+}
+.accordion {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(63, 0, 105);
+  cursor: pointer;
+  padding: 40px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: 20px;
+  
+}
+
+.active, .accordion:hover {
+  transform: scale(1.03); 
+}
+
+.panel {
+  padding: 50px 18px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+
+.footer h2{
+  font-size: 2em;
+}
+
+.footBar {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footBar .logo{
+  position: relative;
+  text-decoration: none;
+  color: rgb(80, 0, 133);
+}
+.footBar li{
+  position: relative;
+  float:left;
+  list-style: none; 
+  margin: 0px 20px;
+  margin-right: 0;
+  
+  justify-content: center;
+  align-items: center;
+}
+.footBar li i{
+  text-decoration: none;
+  
+  justify-content: center;
+  align-items: center;
+  color: rgb(71, 1, 117);
+}
+.footBar ul{
+  float:left;
+  list-style: none; 
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width: 80rem;
+  padding: 10px;
+}
+.footer .bar4{
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background-color: rgb(70, 3, 116);
+  height: 3px;
+}
+.footBarWrapper{
+  padding: 20px;
+}
+.final{
+  display: flex;
+  justify-content: center;
+}
+
+.final p{
+  margin-top: 15px;
+  font-size: 10px;
+  margin-bottom: 100px;
+  color: rgb(73, 0, 122);
+}
+body
+{
+  margin-right: 0px ;
+  background: rgb(255, 255, 255);
+}
