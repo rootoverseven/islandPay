@@ -18,6 +18,7 @@
     }
 })();
 
+let menuopener = 0;
 
 function navdrop() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -26,12 +27,19 @@ function navdrop() {
 }
 function menuNav(x) {
   x.classList.toggle("change");
+
+  if (menuopener > 0) {
+    document.getElementById("myDropdownMenu").style.width = "0px";
+    menuopener = 0;
+  }else{
+    document.getElementById("myDropdownMenu").style.width = "250px";
+    menuopener = 1;
+  }
 }
 
 var acc = document.getElementsByClassName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
@@ -40,5 +48,16 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.display = "block";
     }
+  });
+}
+
+var anch = document.getElementsByTagName("a");
+
+for (let i = 0; i < anch.length; i++) {
+  anch[i].addEventListener("click", function () {
+    document.getElementById("myDropdown").classList.remove("show");
+    document.getElementById("myDropdownMenu").style.width = "0px";
+    menuopener = 0;
+
   });
 }

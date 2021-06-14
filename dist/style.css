@@ -22,9 +22,9 @@
 
 .navBar .logo{
   position: relative;
-  padding-left: 70px;
+  padding-left: 2rem;
   font-family: Monoton;
-  font-size: 30px;
+  font-size: 1.5em;
   text-decoration: none;
   
   color: #31015e;
@@ -33,7 +33,7 @@
   position: relative;
   float:left;
   list-style: none; 
-  margin: 13px 20px;
+  margin: 1em 1em;
   
   justify-content: center;
   align-items: center;
@@ -49,9 +49,10 @@
   float:left;
   list-style: none; 
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 0.5rem;
 }
 .dropdown {
   position: relative;
@@ -61,7 +62,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: rgb(231, 225, 233);
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -69,13 +70,13 @@
 }
 
 .dropdown-content a {
-  color: rgb(88, 88, 88);
+  color: rgb(206, 48, 48);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: rgb(64, 10, 88); color: white;}
 
 .show {display: block;}
 
@@ -89,7 +90,7 @@ button{
 .navButton {
   background-color: #742a7e;
   border: none;
-  color: white;
+  color: white !important;
   margin-top: -10px;
   padding: 3px 40px;
   text-align: center;
@@ -133,6 +134,49 @@ button{
   transition: 0.4s;
 }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(231, 225, 233);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #118817;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .close {
+  width: 250px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .change .mBar1, .change .mBar2, .change .mBar3 {
 
   background-color: coral;
@@ -143,53 +187,6 @@ button{
   height: 77vh;
 }
 
-.banner {
-  background: url(https://nr-customers.s3.amazonaws.com/customers/paysafe/skrill/new-design/images/iStock_bg.png) no-repeat center;
-  background-size: cover;
-  display: flexbox;
-  width: 100%;
-  height: 77vh;
-  top: 0;
-  left: 0;
-  position: block;
-  font-family: Arial;
-}
-
-.answer {
-  align-items: center;
-  text-align: center;
-  position: absolute;
-  top: 33%;
-  left: 25%;
-  right: 25%;;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  box-shadow:0px 10px 20px 10px rgba(0, 0, 0, 0.137);
-}
-.answer h2{
-  font-size: 28px;
-  color: rgb(68, 0, 100);
-}
-.answer input[type=text], select {
-  width:85% ;
-  height: 50px;
-  padding: 12px 20px ;
-  margin-top: 0px;
-  margin-bottom: 25px;
-  display: inline-block;
-  border: 2px solid rgba(80, 80, 80, 0.349);
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 20px;
-}
-::placeholder {
-  color: #742a7e;
-  opacity: 1; /* Firefox */
-}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -218,9 +215,9 @@ button{
 }
 
 .stackWrapper p{
-  font-size: 0.99em;
+  font-size: 1em;
   padding: 0.3em;
-  margin: 2vh 0;
+  margin: 1em 0;
 }
 .stackWrapper .textWrapper{
   padding: 10%;
@@ -385,43 +382,7 @@ a[href].apple {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------- */
 
 
 
@@ -492,16 +453,18 @@ h1{
     height: calc(50rem - 20vw);
   }
   .stackWrapper p{
-    font-size: 1.7vh;
-    padding: 0.3vh;
-    margin: 1.5vh 0;
+    font-size: 1em;
+    padding: 0.1em;
+    margin: 1em 0;
   }
 
   .stackWrapper h1{
-    font-size: 5vh;
+    font-size: 2.5em;
   }
   
 }
+
+
 
 @media screen and (max-width: 600px) {
   .navBar .logo, .navBar li {
@@ -517,19 +480,20 @@ h1{
     margin: 0;
     padding: 0;
     background-color: white;
-    color: rgb(57, 1, 90);
+    color: rgb(57, 1, 90) !important;
     
   }
   .navbar li, a, ul{
     margin: 0;
     padding: 0;
   }
-  .menuNav{
-    display: none;
+  .navBar ul{
+    display: block;
   }
   .stackWrapper .text{
     width: 100%;
     height: 60%;
+    box-shadow: 0 10px 6px 1px #00000054;
   }
   .stackWrapper .img{
     width: 100%;
@@ -539,6 +503,55 @@ h1{
     display: block;
   }
 }
+@media screen and (max-width: 500px) {
+  .navBar li a{
+    display: none
+  }
+  .below-500px{
+    display: block !important;
+  }
+  .navBar li{
+    margin: 0;
+  }
+  .image-stack__item--top .top{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stackWrapper h1{
+    font-size: 2em;
+  }
+  .stackWrapper button{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  .stackWrapper h1{
+    font-size: 1em;
+  }
+  .stackWrapper button{
+    min-width: 100%;
+  }
+  .stackWrapper p{
+    font-size: 0.9em;
+  }
+  .navBar .logo{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 200px) {
+.footer{
+  padding: 0 !important;
+}
+.footBarWrapper{
+  padding: 0 !important;
+}
+a[href].google, a[href].apple{
+  background-size: contain !important;
+}
+}
+
 
 @media screen and (max-width: 900px) {
   .image-stack__item--bottom{
@@ -550,6 +563,7 @@ h1{
   .image-stack__item--top{
     grid-column: 1/6;
     grid-row: 1/3;
+    box-shadow: 0 10px 6px 1px #00000054
   }
 }
 
@@ -653,7 +667,7 @@ h1{
 }
 .footer{
   width: 80rem;
-  padding: 10px;
+  padding: 0.5em;
 }
 .footer .bar4{
   margin-top: 70px;
@@ -662,7 +676,7 @@ h1{
   height: 3px;
 }
 .footBarWrapper{
-  padding: 20px;
+  padding: 0.7em;
 }
 .final{
   display: flex;

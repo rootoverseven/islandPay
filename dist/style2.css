@@ -179,12 +179,10 @@ a:hover {
 }
 
 a:not([href]) {
-	color: inherit;
 	text-decoration: none
 }
 
 a:not([href]):hover {
-	color: inherit;
 	text-decoration: none
 }
 
@@ -5930,10 +5928,6 @@ a.close.disabled {
 	overflow: hidden
 }
 
-.modal-dialog-scrollable .modal-footer,
-.modal-dialog-scrollable .modal-header {
-	flex-shrink: 0
-}
 
 .modal-dialog-scrollable .modal-body {
 	overflow-y: auto
@@ -6023,20 +6017,6 @@ a.close.disabled {
 	padding: 1rem
 }
 
-.modal-footer {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: flex-end;
-	padding: .75rem;
-	border-top: 1px solid #dee2e6;
-	border-bottom-right-radius: calc(.3rem - 1px);
-	border-bottom-left-radius: calc(.3rem - 1px)
-}
-
-.modal-footer>* {
-	margin: .25rem
-}
 
 .modal-scrollbar-measure {
 	position: absolute;
@@ -11274,13 +11254,8 @@ a[href].google-play-badge {
 	border-top: 1px solid #dfdfdf
 }
 
-#comparison-modal .skrill-line {
-	color: #811e68
-}
 
-#comparison-modal .skrill-line .skrill-receive-amount {
-	font-size: 18px
-}
+
 
 #comparison-modal .yellow-link {
 	background-color: #ffd800;
@@ -11379,9 +11354,6 @@ a[href].google-play-badge {
 	padding: 0
 }
 
-.calculator-skrill {
-	text-align: center
-}
 
 .page-container .page .calculator .calculator--toggle-button {
 	display: -webkit-box;
@@ -12084,234 +12056,6 @@ a[href].google-play-badge {
 	}
 }
 
-@font-face {
-	font-family: Skrill Speed Sans;
-	src: url(../fonts/SkrillSpeedSans-Regular.woff2) format("woff2");
-	font-weight: 400;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Skrill Speed Sans;
-	src: url(../fonts/SkrillSpeedSans-Bold.woff2) format("woff2");
-	font-weight: 700;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Skrill Speed Sans;
-	src: url(../fonts/SkrillSpeedSans-Light.woff2) format("woff2");
-	font-weight: 300;
-	font-display: swap
-}
-
-@font-face {
-	font-family: Skrill Speed Sans;
-	src: url(../fonts/SkrillSpeedSans-Medium.woff2) format("woff2");
-	font-weight: 500;
-	font-display: swap
-}
-
-footer {
-	padding: 1em
-}
-
-footer section {
-	padding: 1em
-}
-
-footer .footer {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(4, auto);
-	grid-gap: 2em 20px;
-	padding-top: 2em;
-	border-top: 3px solid #4f2455
-}
-
-@media (min-width:600px) {
-	footer .footer {
-		padding-top: 4em
-	}
-}
-
-@media (max-width:599px) {
-	footer .footer {
-		padding-bottom: 2em
-	}
-}
-
-footer .footer .footer--title {
-	grid-column: 1/13;
-	grid-row: 1/2
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--title {
-		grid-column: 1/11
-	}
-}
-
-footer .footer .footer--title h3 {
-	margin: 0;
-	font-weight: 700
-}
-
-footer .footer .footer--navigation {
-	grid-column: 1/13;
-	grid-row: 3/4;
-	font-size: 16px;
-	line-height: 28px
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--navigation {
-		grid-column: 1/8;
-		grid-row: 2/3
-	}
-}
-
-footer .footer .footer--navigation ul {
-	padding: 0;
-	margin: 0;
-	flex-wrap: wrap
-}
-
-footer .footer .footer--navigation ul li {
-	list-style: none;
-	padding-right: 40px
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--navigation ul li {
-		display: inline-block
-	}
-}
-
-footer .footer .footer--navigation ul li a {
-	font-size: 16px;
-	white-space: unset
-}
-
-footer .footer .footer--navigation ul li a.optanon-show-settings:not(.btn) {
-	text-decoration: none;
-	font-weight: 700;
-	cursor: pointer
-}
-
-footer .footer .footer--social-links {
-	display: flex;
-	align-items: center;
-	grid-column: 1/13;
-	grid-row: 2/3
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--social-links {
-		justify-content: flex-end;
-		grid-column: 11/13;
-		grid-row: 1/2
-	}
-}
-
-footer .footer .footer--social-links ul {
-	padding: 0;
-	margin: 0;
-	display: grid;
-	grid-template-columns: repeat(3, 30px);
-	grid-gap: 20px
-}
-
-footer .footer .footer--social-links ul li {
-	display: inline-block;
-	list-style: none
-}
-
-footer .footer .footer--social-links ul li a[href]:before {
-	content: "";
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	background-color: var(--color)
-}
-
-footer .footer .footer--social-links ul li a[href].facebook:before {
-	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='366px' height='365px' viewBox='0 0 366 365' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ESlice 1%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Skrill_SocialIcons_FB' fill='%234F2455' fill-rule='nonzero'%3E%3Cpath d='M335.3,0 C351.87,0 365.3,13.43 365.3,30 L365.3,334.59 C365.29,351.15 351.86,364.59 335.29,364.59 L30.71,364.59 C14.14,364.59 0.71,351.16 0.71,334.59 L0.71,30 C0.71,13.43 14.14,0 30.71,0 L335.3,0 Z M308.07,54.4 L258.45,54.4 C223.34,54.4 194.87,82.86 194.87,117.98 L194.87,117.98 L194.87,166.26 L147.41,166.26 L147.41,223.75 L194.87,223.75 L194.87,364.58 L252.37,364.58 L252.37,223.75 L299.61,223.75 L307.19,166.26 L252.37,166.26 L252.37,126.3 C252.37,115.14 261.41,106.1 272.57,106.1 L272.57,106.1 L308.07,106.1 L308.07,54.4 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	-webkit-mask: var(--icon) no-repeat 0 0/contain;
-	mask: var(--icon) no-repeat 0 0/contain
-}
-
-footer .footer .footer--social-links ul li a[href].twitter:before {
-	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='366px' height='366px' viewBox='0 0 366 366' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ESlice 1%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Skrill_SocialIcons_TW' fill='%234F2455' fill-rule='nonzero'%3E%3Cpath d='M335.3,0.71 C351.87,0.71 365.3,14.14 365.3,30.71 L365.3,335.3 C365.29,351.86 351.86,365.29 335.29,365.29 L30.71,365.29 C14.14,365.29 0.71,351.86 0.71,335.29 L0.71,30.71 C0.71,14.14 14.14,0.71 30.71,0.71 L335.3,0.71 Z M234.79,74.14 C204.37,74.14 179.72,98.78 179.72,129.18 C179.72,133.47 180.22,137.64 181.15,141.65 C176.9,141.47 112.16,137.85 68.12,84.51 C68.12,84.51 41.8,120.45 83.81,157.4 C83.81,157.4 71.03,156.9 60.02,150.31 C60.02,150.31 55.98,193.84 103.55,204.97 C103.55,204.97 94.18,208.52 79.25,205.99 C79.25,205.99 87.6,241.16 129.87,244.45 C129.87,244.45 96.45,274.63 49.02,267.56 L49.02,267.56 L49.8126894,268.059548 C73.9061129,283.142643 102.405326,291.86 132.92,291.86 C219.59,291.86 289.86,221.58 289.86,134.91 C289.86,132.75 289.82,130.6 289.73,128.46 C292.86,125.99 312.25,110.45 317.01,100.44 C317.01,100.44 301.26,106.99 285.85,108.53 L285.85,108.53 L285.75,108.54 C285.75,108.54 285.78,108.53 285.83,108.49 C287.25,107.54 307.1,94.03 309.79,77.93 C309.79,77.93 298.66,83.88 283.06,89.08 C280.48,89.94 277.78,90.78 274.99,91.56 C264.94,80.84 250.65,74.14 234.79,74.14 Z' id='Combined-Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	-webkit-mask: var(--icon) no-repeat 0 0/contain;
-	mask: var(--icon) no-repeat 0 0/contain
-}
-
-footer .footer .footer--social-links ul li a[href].instagram:before {
-	--icon: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='366px' height='366px' viewBox='0 0 366 366' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ESlice 1%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Skrill_SocialIcons_IG' fill='%234F2455' fill-rule='nonzero'%3E%3Cpath d='M335.3,0.71 C351.87,0.71 365.3,14.14 365.3,30.71 L365.3,335.3 C365.29,351.86 351.86,365.29 335.29,365.29 L30.71,365.29 C14.14,365.29 0.71,351.86 0.71,335.29 L0.71,30.71 C0.71,14.14 14.14,0.71 30.71,0.71 L335.3,0.71 Z M243.4,61.11 L122.6,61.11 L121.584617,61.1182557 C88.4753956,61.6569902 61.6414594,88.4942499 61.1080916,121.604752 L61.1,122.61 L61.1,243.4 L61.1082557,244.415383 C61.6469902,277.524604 88.4842499,304.358541 121.594752,304.891908 L122.6,304.9 L243.4,304.9 L244.415383,304.891747 C277.524604,304.353206 304.358541,277.525457 304.891908,244.405539 L304.9,243.4 L304.9,122.6 L304.89145,121.58462 C304.337767,88.141158 276.9709,61.11 243.4,61.11 Z M91.4979286,259.356582 C95.8176285,267.744467 103.430294,274.17134 112.612802,276.915499 L112.530043,276.891754 C103.505436,274.171899 96.0081167,267.894182 91.6735698,259.696797 L91.4979286,259.356582 Z' id='Combined-Shape'%3E%3C/path%3E%3Cpath d='M183,146.75 C163.02,146.75 146.74,163.02 146.74,183 C146.74,202.99 163.01,219.26 183,219.26 C202.99,219.26 219.25,202.99 219.25,183 C219.25,163.01 202.99,146.75 183,146.75 Z' id='Path'%3E%3C/path%3E%3Cpath d='M243.4,87.64 L122.6,87.64 C103.32,87.64 87.64,103.33 87.64,122.6 L87.64,243.4 C87.64,262.68 103.33,278.37 122.6,278.37 L243.4,278.37 C262.68,278.37 278.37,262.68 278.37,243.4 L278.37,122.6 C278.37,103.33 262.68,87.64 243.4,87.64 Z M183,245.79 C148.38,245.79 120.22,217.62 120.22,183 C120.22,148.38 148.39,120.22 183,120.22 C217.62,120.22 245.79,148.39 245.79,183 C245.79,217.62 217.62,245.79 183,245.79 Z M247.81,133.2 C239.61,133.2 232.95,126.54 232.95,118.34 C232.95,110.15 239.61,103.48 247.81,103.48 C256,103.48 262.67,110.14 262.67,118.34 C262.66,126.53 256,133.2 247.81,133.2 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-	-webkit-mask: var(--icon) no-repeat 0 0/contain;
-	mask: var(--icon) no-repeat 0 0/contain
-}
-
-footer .footer .footer--logo {
-	grid-column: 1/13;
-	grid-row: 4/5;
-	justify-self: start;
-	align-self: end
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--logo {
-		justify-self: end;
-		grid-column: 8/13;
-		grid-row: 2/3
-	}
-}
-
-footer .footer .footer--logo .footer--logo__lg {
-	display: none;
-	width: 204px
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--logo .footer--logo__lg {
-		display: block
-	}
-}
-
-footer .footer .footer--logo .footer--logo__sm {
-	width: 158px
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--logo .footer--logo__sm {
-		display: none
-	}
-}
-
-footer .footer .footer--logo img {
-	height: auto
-}
-
-footer .footer .footer--copyright {
-	grid-column: 1/13;
-	grid-row: 5/6;
-	font-size: 11px;
-	line-height: 1.4;
-	text-align: justify;
-	letter-spacing: 0
-}
-
-@media (min-width:600px) {
-	footer .footer .footer--copyright {
-		text-align: unset;
-		grid-row: 3/4
-	}
-}
-
-.page-container .footer--social-links a:not(.btn):hover {
-	border-bottom: none
-}
 
 .page .form-control {
 	font: inherit;
@@ -13772,9 +13516,7 @@ footer .footer .footer--copyright {
 	display: block
 }
 
-section.skrill-live-crypto {
-	overflow: auto
-}
+
 
 .live-crypto-single,
 table.skrill-live-crypto {
@@ -17623,9 +17365,7 @@ span.trigger:checked:before {
 }
 
 .page-container nav a[href] {
-	text-decoration: none;
 	font-weight: 700;
-	color: inherit;
 	white-space: nowrap
 }
 
