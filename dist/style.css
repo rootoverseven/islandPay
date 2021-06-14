@@ -248,7 +248,7 @@ button{
   background-color: rgb(50, 132, 255);
 }
 .stackWrapper .imgContent{
-  background: url(https://www.skrill.com/fileadmin/_processed_/8/a/csm_receive-money_216e73b920.webp) no-repeat center;
+  background: url(../images/csm_receive-money_216e73b920.webp) no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -325,14 +325,14 @@ button{
 }
 
 .image-stack__item--bottom .bottom{
-  background: url(https://www.skrill.com/fileadmin/_processed_/5/6/csm_hp-bike_da170532c2.webp) no-repeat center;
+  background: url(../images/csm_hp-bike_da170532c2.webp) no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100%;
   display: block;
 }
 .stack-two .bottom{
-  background: url(https://www.skrill.com/fileadmin/_processed_/3/4/csm_download-app-homepage_8cb4136ae0.webp) no-repeat center;
+  background: url(../images/csm_download-app-homepage_8cb4136ae0.webp) no-repeat center;
 }
 
 a[href].google {
