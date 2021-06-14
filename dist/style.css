@@ -428,7 +428,7 @@ a[href].apple {
 
 
 h1{
-  padding: 120px;
+  padding: 10%;
   text-align: center;
   font-size: 50px;
   color: rgb(63, 0, 105);
@@ -526,10 +526,21 @@ h1{
   }
   .menuNav{
     display: none;
-  } 
+  }
+  .stackWrapper .text{
+    width: 100%;
+    height: 60%;
+  }
+  .stackWrapper .img{
+    width: 100%;
+    height: 40%;
+  }
+  .register{
+    display: block;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
   .image-stack__item--bottom{
     grid-column: 6/1;
     grid-row: -2/-1;
